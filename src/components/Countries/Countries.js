@@ -16,18 +16,14 @@ const Countries = () => {
         style={{
           textAlign: "center",
           fontSize: "3rem",
-          color: "hotpink",
+          color: "black",
         }}
       >
         Hello from the Countries: {countries.length}
       </h1>
       <div className="countries">
         {countries.map((country) => (
-          <Country
-            name={country.name}
-            capital={country.capital}
-            population={country.population}
-          ></Country>
+          <Country country={country}></Country>
         ))}
       </div>
     </div>
