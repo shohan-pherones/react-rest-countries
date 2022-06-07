@@ -23,7 +23,7 @@ const Countries = () => {
       </h1>
       <div className="countries">
         {countries.map((country) => (
-          <Country country={country}></Country>
+          <Country country={country} key={country.alpha3code}></Country>
         ))}
       </div>
     </div>
